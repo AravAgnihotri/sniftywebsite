@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "node waitlist-server.js",
+    "start": "node waitlist-server.js",
     "serve": "node waitlist-server.js"
   },
   "dependencies": {
