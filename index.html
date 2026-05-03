@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snifty — Sniff out cancer before it finds you. No dog required.</title>
+  <meta name="description" content="The first at-home device that reads your breath chemistry continuously — detecting lung cancer biomarkers before symptoms appear." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAV ─────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo" aria-label="Snifty home">
+        <img src="logo-snifty.jpg" alt="" class="logo-img" width="120" height="113" decoding="async" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#science">Science</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-right">
+        <a
+          href="https://www.linkedin.com/company/sniftylabs/"
+          class="btn btn-outline btn-sm btn-linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="btn-linkedin-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="#waitlist" class="btn btn-primary btn-sm">Get Early Access</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO ──────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-inner">
+
+        <div class="hero-copy">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            12,847 people on the early access list
+          </div>
+          <h1 class="hero-headline">
+            Sniff out cancer before it finds you. <span class="purple">No dog required.</span>
+          </h1>
+          <p class="hero-sub">
+            Snifty sits in your home and reads your breath chemistry around the clock — detecting the chemical fingerprint of lung cancer before you ever feel a symptom.
+          </p>
+          <div class="hero-actions">
+            <a href="#waitlist" class="btn btn-primary">Reserve Early Access</a>
+            <a href="#how-it-works" class="text-link">
+              See how it works
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9M7.5 3.5l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <div class="hero-trust">
+            <span class="trust-name">TKS Moonshot Product</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-dog-wrap">
+            <img
+              src="dog.png"
+              alt="A dog — nature's original cancer detector"
+              class="hero-dog-img"
+            />
+          </div>
+          <div class="hero-dog-caption">
+            Dogs can smell cancer with 97% accuracy. Snifty is the technology version.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SURVIVAL STATS (purple band) ─────────────── -->
+  <section class="survival">
+    <div class="container">
+      <p class="survival-intro">Lung cancer's survival rate has nothing to do with the cancer. It's about when you find it.</p>
+      <div class="survival-grid">
+        <div class="surv-stat">
+          <span class="surv-pct">60%</span>
+          <span class="surv-stage">Stage 1 detection</span>
+          <span class="surv-label">5-year survival rate</span>
+        </div>
+        <div class="surv-vs">vs</div>
+        <div class="surv-stat muted-stat">
+          <span class="surv-pct">6%</span>
+          <span class="surv-stage">Stage 4 detection</span>
+          <span class="surv-label">5-year survival rate</span>
+        </div>
+      </div>
+      <p class="survival-coda">75% of cases are found at Stage 3 or 4. That's what Snifty is changing.</p>
+    </div>
+  </section>
+
+  <!-- ── PRODUCT ───────────────────────────────────── -->
+  <section class="product" id="product">
+    <div class="container">
+      <div class="product-intro">
+        <div class="product-visual">
+          <img
+            src="product-device.png"
+            alt="Snifty device — white capsule-shaped breath analyzer"
+            class="product-img"
+            width="414"
+            height="294"
+            loading="lazy"
+          />
+        </div>
+        <div class="product-copy">
+          <div class="eyebrow">The Product</div>
+          <h2>About the size of an AirPods case. Built for daily breath.</h2>
+          <p class="product-lede">
+            Snifty is a small wearable or bedside device that you breathe into daily, about the size of an AirPods case, designed to passively analyze the chemical signature of your breath without needing a clinic or test. It uses specialized sensors to detect VOC biomarkers linked to early-stage lung cancer, then sends this data to an app where AI compares each reading to your personal baseline built over time. Instead of relying on fixed thresholds, it detects subtle changes in your breath patterns that could signal early disease. The app shows a daily health score, trends, and alerts if something unusual is detected, prompting you to see a doctor. Snifty doesn’t diagnose—it flags early risk, helping catch lung cancer when it’s most treatable.
+          </p>
+        </div>
+      </div>
+
+      <div class="product-flow">
+        <h3 class="product-flow-title">From your breath to your baseline</h3>
+        <ol class="product-steps" aria-label="How Snifty processes each reading">
+          <li class="product-step">
+            <span class="product-step-num" aria-hidden="true">1</span>
+            <p>You breathe into or near the device for about 30 seconds each day.</p>
+          </li>
+          <li class="product-step">
+            <span class="product-step-num" aria-hidden="true">2</span>
+            <p>The sensors analyze your breath and generate a chemical fingerprint.</p>
+          </li>
+          <li class="product-step">
+            <span class="product-step-num" aria-hidden="true">3</span>
+            <p>The data is sent to the app.</p>
+          </li>
+          <li class="product-step">
+            <span class="product-step-num" aria-hidden="true">4</span>
+            <p>AI compares the reading to your personal baseline and detects subtle changes over time.</p>
+          </li>
+          <li class="product-step">
+            <span class="product-step-num" aria-hidden="true">5</span>
+            <p>The app displays a daily health score, trends, and alerts if something unusual is detected, prompting you to see a doctor and share the data if needed.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PLATFORM PREVIEW ─────────────────────────── -->
+  <section class="platform" id="platform">
+    <div class="container">
+      <div class="eyebrow center">The Platform</div>
+      <h2 class="center platform-h2">Your chemical fingerprint.<br/>Updated continuously.</h2>
+      <p class="section-sub center">The Snifty app shows your VOC baseline over time, flags deviations, and tells you exactly what to do next — so you always know where you stand.</p>
+
+      <div class="platform-wrap">
+
+        <!-- Floating notification -->
+        <div class="pfloat notif-pf">
+          <div class="notif-icon">✓</div>
+          <div class="notif-body">
+            <strong>All clear · Day 47</strong>
+            <span>Baseline stable. No anomalies detected.</span>
+          </div>
+        </div>
+
+        <!-- Main dashboard -->
+        <div class="dash-card">
+          <div class="dash-chrome">
+            <div class="chrome-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="dash-chrome-title">Snifty · Chemical Dashboard</span>
+            <span class="dash-live">
+              <span class="live-dot"></span>Live
+            </span>
+          </div>
+
+          <div class="dash-body">
+            <div class="dash-chart-header">
+              <span class="dash-chart-label">VOC Chemical Index · 90 Day View</span>
+              <span class="dash-legend">
+                <span class="legend-dash"></span> Your baseline
+              </span>
+            </div>
+
+            <div class="chart-wrap">
+              <div class="chart-y">
+                <span>96</span><span>92</span><span>88</span>
+              </div>
+              <div class="chart-plot-area">
+                <svg class="voc-svg" viewBox="0 0 480 100" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="fillGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#7a5cff" stop-opacity="0.16"/>
+                      <stop offset="100%" stop-color="#7a5cff" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <line x1="0" y1="0"   x2="480" y2="0"   class="chart-grid"/>
+                  <line x1="0" y1="50"  x2="480" y2="50"  class="chart-grid"/>
+                  <line x1="0" y1="100" x2="480" y2="100" class="chart-grid"/>
+                  <line x1="0" y1="56" x2="480" y2="56" class="chart-baseline"/>
+                  <path class="chart-area"
+                    d="M0,62 C26,62 26,88 53,88 C80,88 80,50 107,50 C134,50 134,75 160,75
+                       C187,75 187,25 213,25 C240,25 240,62 267,62 C294,62 294,50 320,50
+                       C347,50 347,75 373,75 C400,75 400,38 427,38 C454,38 454,62 480,62
+                       L480,100 L0,100 Z"/>
+                  <path class="chart-line" id="vocLine"
+                    d="M0,62 C26,62 26,88 53,88 C80,88 80,50 107,50 C134,50 134,75 160,75
+                       C187,75 187,25 213,25 C240,25 240,62 267,62 C294,62 294,50 320,50
+                       C347,50 347,75 373,75 C400,75 400,38 427,38 C454,38 454,62 480,62"/>
+                  <circle class="live-pt" cx="480" cy="62" r="3.5"/>
+                  <circle class="live-ring" cx="480" cy="62" r="7"/>
+                </svg>
+                <div class="chart-x">
+                  <span>Oct</span><span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="dash-metrics">
+              <div class="dash-metric">
+                <span class="dm-val green">Low</span>
+                <span class="dm-key">Risk Score</span>
+              </div>
+              <div class="dm-divider"></div>
+              <div class="dash-metric">
+                <span class="dm-val">248</span>
+                <span class="dm-key">Compounds</span>
+              </div>
+              <div class="dm-divider"></div>
+              <div class="dash-metric">
+                <span class="dm-val">47</span>
+                <span class="dm-key">Days Active</span>
+              </div>
+              <div class="dm-divider"></div>
+              <div class="dash-metric">
+                <span class="dm-val">91.8</span>
+                <span class="dm-key">Baseline</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dash-footer">
+            <span class="dash-ok">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#22c55e" stroke-width="1.2"/><path d="M3.5 6l1.8 1.8 3.2-3.2" stroke="#22c55e" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              No anomalies detected
+            </span>
+            <span class="dash-ts">Last scan · just now</span>
+          </div>
+        </div>
+
+        <!-- Floating compounds -->
+        <div class="pfloat cpd-pf">
+          <div class="compounds-title">Breath Profile</div>
+          <div class="cpd-row">
+            <span class="cpd-name">Isoprene</span>
+            <div class="cpd-bar-bg"><div class="cpd-bar" style="width:85%"></div></div>
+            <span class="cpd-val">4.2</span>
+          </div>
+          <div class="cpd-row">
+            <span class="cpd-name">Acetone</span>
+            <div class="cpd-bar-bg"><div class="cpd-bar" style="width:52%"></div></div>
+            <span class="cpd-val">2.1</span>
+          </div>
+          <div class="cpd-row">
+            <span class="cpd-name">Pentane</span>
+            <div class="cpd-bar-bg"><div class="cpd-bar" style="width:44%"></div></div>
+            <span class="cpd-val">1.8</span>
+          </div>
+          <div class="cpd-row">
+            <span class="cpd-name">Ethanol</span>
+            <div class="cpd-bar-bg"><div class="cpd-bar" style="width:22%"></div></div>
+            <span class="cpd-val">0.9</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROBLEM ───────────────────────────────────── -->
+  <section class="problem" id="problem">
+    <div class="container">
+      <div class="problem-inner">
+        <div class="problem-copy">
+          <div class="eyebrow">The Problem</div>
+          <h2>It's been hiding in plain breath.</h2>
+          <p>Lung cancer kills more people than breast, colon, and prostate cancer combined. And yet — there's no passive, at-home way to screen for it. Nothing you can set up and forget. Nothing that watches while you sleep.</p>
+          <p>The existing option is a low-dose CT scan: expensive, involves radiation, requires a clinic, and only recommended for heavy smokers over 50. Most people don't qualify. Most who do, don't go.</p>
+          <p>So three out of four people get diagnosed when it's already Stage 3 or 4 — when treatment is brutal and survival rates drop to single digits.</p>
+          <p class="problem-pull">The technology to catch it earlier has existed in research labs for decades. It just never made it home.</p>
+        </div>
+        <div class="problem-chart-wrap">
+          <div class="stage-bars">
+            <div class="sb-col">
+              <div class="sb-bar-wrap">
+                <div class="sb-bar purple-bar" style="--h:60">
+                  <span>60%</span>
+                </div>
+              </div>
+              <div class="sb-label">Stage 1</div>
+              <div class="sb-sub">Caught early</div>
+            </div>
+            <div class="sb-col">
+              <div class="sb-bar-wrap">
+                <div class="sb-bar mid-bar" style="--h:38">
+                  <span>38%</span>
+                </div>
+              </div>
+              <div class="sb-label">Stage 2</div>
+              <div class="sb-sub">Often treatable</div>
+            </div>
+            <div class="sb-col">
+              <div class="sb-bar-wrap">
+                <div class="sb-bar warn-bar" style="--h:15">
+                  <span>15%</span>
+                </div>
+              </div>
+              <div class="sb-label">Stage 3</div>
+              <div class="sb-sub">Complex</div>
+            </div>
+            <div class="sb-col">
+              <div class="sb-bar-wrap">
+                <div class="sb-bar crit-bar" style="--h:6">
+                  <span>6%</span>
+                </div>
+              </div>
+              <div class="sb-label">Stage 4</div>
+              <div class="sb-sub">Where 75% land</div>
+            </div>
+          </div>
+          <p class="sb-caption">5-year survival rate by stage at detection</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SCIENCE ───────────────────────────────────── -->
+  <section class="science" id="science">
+    <div class="container">
+      <div class="science-inner">
+        <div class="science-copy">
+          <div class="eyebrow">The Science</div>
+          <h2>Your breath already knows.<br/>We just needed to listen.</h2>
+          <p>Every breath you exhale carries hundreds of volatile organic compounds — chemical byproducts of what's happening inside your body metabolically. When cancer develops, cellular metabolism changes. Those changes produce a specific VOC fingerprint.</p>
+          <p>Peer-reviewed research from the Cleveland Clinic, University of Louisville, and multiple European institutions has confirmed that breath-based VOC analysis can detect lung cancer at early stages with high sensitivity. The science isn't new. The consumer device is.</p>
+          <a href="#how-it-works" class="btn btn-outline">See how Snifty uses it →</a>
+        </div>
+        <div class="science-steps">
+          <div class="sci-step">
+            <span class="sci-num">01</span>
+            <div class="sci-text">
+              <h4>Exhaled breath disperses into your space</h4>
+              <p>VOC molecules — including cancer-associated biomarkers — disperse into the air around you at trace concentrations Snifty's sensors are calibrated to detect.</p>
+            </div>
+          </div>
+          <div class="sci-step">
+            <span class="sci-num">02</span>
+            <div class="sci-text">
+              <h4>Sensors capture the chemical signature</h4>
+              <p>High-sensitivity electrochemical sensors sample continuously, identifying hundreds of compounds — including the specific VOC biomarkers validated in peer-reviewed cancer research.</p>
+            </div>
+          </div>
+          <div class="sci-step">
+            <span class="sci-num">03</span>
+            <div class="sci-text">
+              <h4>AI maps your personal baseline</h4>
+              <p>Unlike population screening, Snifty learns what normal looks like for you — factoring in your diet, environment, and genetics. Deviations from your baseline trigger alerts. Not statistical noise.</p>
+            </div>
+          </div>
+          <div class="sci-step">
+            <span class="sci-num">04</span>
+            <div class="sci-text">
+              <h4>You receive a clear next step</h4>
+              <p>When something meaningful shifts, the app tells you — and tells you what to do. Whether that's watching closely or booking a CT scan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ──────────────────────────────── -->
+  <section class="hiw" id="how-it-works">
+    <div class="container">
+      <div class="eyebrow center">Simple by Design</div>
+      <h2 class="center">Set it once. It watches forever.</h2>
+      <p class="section-sub center">Snifty requires zero active participation after setup. It learns your chemistry, monitors continuously, and only asks for your attention when something warrants it.</p>
+      <div class="hiw-steps">
+        <div class="hiw-step">
+          <div class="hiw-num">01</div>
+          <h3>Place it in your room</h3>
+          <p>Nightstand, desk, living room — anywhere you spend time. Plug it in. No tubes, no masks, no routine.</p>
+        </div>
+        <div class="hiw-arrow" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M5 3.5l5.5 5.5L5 14.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="hiw-step">
+          <div class="hiw-num">02</div>
+          <h3>It maps your baseline</h3>
+          <p>In the first 30 days, Snifty's AI builds a chemical profile unique to you. This is your reference point — not a population average.</p>
+        </div>
+        <div class="hiw-arrow" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M5 3.5l5.5 5.5L5 14.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="hiw-step">
+          <div class="hiw-num">03</div>
+          <h3>It monitors continuously</h3>
+          <p>24/7, Snifty compares live readings against your baseline. Trends, patterns, and anomalies are logged automatically.</p>
+        </div>
+        <div class="hiw-arrow" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M5 3.5l5.5 5.5L5 14.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="hiw-step">
+          <div class="hiw-num">04</div>
+          <h3>It alerts you clearly</h3>
+          <p>If a meaningful deviation is detected, you get an alert and a specific recommendation — not just a number to worry about.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PERSONAL BASELINE CALLOUT ────────────────── -->
+  <section class="baseline-callout">
+    <div class="container">
+      <div class="baseline-inner">
+        <div class="baseline-copy">
+          <div class="eyebrow">The Core Difference</div>
+          <h2>It knows your normal. Not everyone else's.</h2>
+          <p>Generic breath analysis compares you to a population average — noisy, imprecise, and prone to false alarms. Snifty builds a personal chemical model from day one. It knows what your breath looked like when you were healthy.</p>
+          <p>That means fewer false positives. Earlier detection of real changes. And a model that compounds in accuracy — the longer you use it, the smarter it gets about you specifically.</p>
+        </div>
+        <div class="baseline-visual">
+          <div class="bv-card">
+            <div class="bv-header">
+              <span class="bv-title">Personal Baseline vs. Population Average</span>
+            </div>
+            <div class="bv-chart">
+              <svg viewBox="0 0 320 120" preserveAspectRatio="none" class="bv-svg">
+                <defs>
+                  <linearGradient id="popGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#e5e7eb" stop-opacity="0.6"/>
+                    <stop offset="100%" stop-color="#e5e7eb" stop-opacity="0"/>
+                  </linearGradient>
+                  <linearGradient id="persGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#7a5cff" stop-opacity="0.2"/>
+                    <stop offset="100%" stop-color="#7a5cff" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <!-- population band (wide, gray) -->
+                <path d="M0,20 C80,10 160,40 320,15 L320,60 C160,80 80,50 0,65 Z" fill="url(#popGrad)" stroke="#d1d5db" stroke-width="0.5"/>
+                <!-- personal line (tight, purple) -->
+                <path d="M0,42 C40,40 80,44 120,38 C160,32 200,46 240,40 C280,34 300,42 320,38" fill="none" stroke="#7a5cff" stroke-width="2"/>
+                <path d="M0,42 C40,40 80,44 120,38 C160,32 200,46 240,40 C280,34 300,42 320,38 L320,120 L0,120 Z" fill="url(#persGrad)"/>
+                <!-- alert zone -->
+                <rect x="240" y="0" width="80" height="120" fill="rgba(122,92,255,0.03)"/>
+                <line x1="240" y1="0" x2="240" y2="120" stroke="#7a5cff" stroke-width="0.8" stroke-dasharray="3,3"/>
+              </svg>
+              <div class="bv-labels">
+                <span class="bv-label-pop">Population average band</span>
+                <span class="bv-label-pers">Your personal baseline</span>
+              </div>
+            </div>
+            <div class="bv-insight">
+              <span class="bv-badge">Snifty difference</span>
+              Alerts fire against your baseline — not the noise of population comparison
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHO IT'S FOR ───────────────────────────────── -->
+  <section class="audience" id="audience">
+    <div class="container">
+      <div class="eyebrow">Who It's For</div>
+      <h2>You don't have to be high-risk to want early warning.</h2>
+      <div class="audience-grid">
+        <div class="aud-card">
+          <div class="aud-label">Current or former smokers</div>
+          <p>Your risk doesn't disappear when you quit. Snifty provides the continuous monitoring that CT screening can't — without radiation, without the waiting room.</p>
+        </div>
+        <div class="aud-card">
+          <div class="aud-label">Family history</div>
+          <p>If a parent or sibling had lung cancer, your risk is elevated. Snifty gives you data — not anxiety, not vague worry, data you can actually act on.</p>
+        </div>
+        <div class="aud-card">
+          <div class="aud-label">Health-conscious trackers</div>
+          <p>If you wear an Oura or Whoop, you already understand continuous baseline monitoring. Snifty is the layer those devices can't reach.</p>
+        </div>
+        <div class="aud-card">
+          <div class="aud-label">Anyone over 40</div>
+          <p>Lung cancer risk increases significantly with age. Snifty is the proactive move for anyone who wants to stay ahead of the statistics — not behind them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TRUST ─────────────────────────────────────── -->
+  <section class="trust-strip">
+    <div class="container">
+      <div class="trust-items">
+        <div class="trust-item">
+          <div class="trust-ico" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12a9 9 0 1 0 3-6.7"/>
+              <path d="M3 4v5h5"/>
+            </svg>
+          </div>
+          <strong>30-day money-back</strong>
+          <span>No questions, no friction.</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-ico" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="10.5" width="16" height="10" rx="2.2"/>
+              <path d="M7.5 10.5V7.2a4.5 4.5 0 0 1 9 0v3.3"/>
+              <circle cx="12" cy="15.5" r="1.2" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <strong>Your data stays yours</strong>
+          <span>Encrypted, never sold.</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-ico" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 3h6"/>
+              <path d="M10 3v6.5L5.4 18a2.5 2.5 0 0 0 2.2 3.6h8.8A2.5 2.5 0 0 0 18.6 18L14 9.5V3"/>
+              <path d="M7.7 14h8.6"/>
+            </svg>
+          </div>
+          <strong>Peer-reviewed science</strong>
+          <span>Not proprietary claims.</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-ico" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/>
+              <path d="M14 3v5h5"/>
+              <path d="M9 14.5l2 2 4-4.2"/>
+            </svg>
+          </div>
+          <strong>FDA regulatory path</strong>
+          <span>510(k) clearance in progress.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ───────────────────────────────────────── -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="eyebrow">Common Questions</div>
+      <h2>Things worth knowing.</h2>
+      <div class="faq-cols">
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q">Does Snifty diagnose lung cancer?</button>
+            <div class="faq-a">
+              <p>No. Snifty is a wellness monitoring device, not a diagnostic tool. It flags VOC anomalies that may warrant medical follow-up — then recommends you see a doctor or get a CT scan. Any diagnosis must come from a qualified medical professional. Snifty gets you in the room earlier.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">How long until I see meaningful data?</button>
+            <div class="faq-a">
+              <p>Your personal baseline is established over the first 30 days. After that, Snifty can detect meaningful deviations. The longer you use it, the more accurate your model becomes — six months in, sensitivity is materially higher than day one.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">What about false positives?</button>
+            <div class="faq-a">
+              <p>Personal baseline modeling is specifically designed to minimize them. Because Snifty measures deviation from your own chemistry, normal variation from diet or environment doesn't trigger alerts. When an alert fires, it reflects a statistically meaningful shift from your personal profile.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Is the science actually proven?</button>
+            <div class="faq-a">
+              <p>VOC breath biomarker research has been validated in peer-reviewed publications from the Cleveland Clinic, University of Louisville, and European institutions — appearing in the Journal of Breath Research and the European Respiratory Journal. This is decades of lab science, now in consumer form.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">When does it ship?</button>
+            <div class="faq-a">
+              <p>Snifty is in its final development phase. Founding member devices are scheduled to ship Q4 2026. Your founding pricing is locked in today — guaranteed for life.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">I've never smoked. Do I need this?</button>
+            <div class="faq-a">
+              <p>15–20% of lung cancer cases occur in people who have never smoked. Radon, air quality, occupational exposure, and genetics all play a role. Snifty is for anyone who wants proactive visibility — not just people who've been told they're high-risk.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FINAL CTA ──────────────────────────────────── -->
+  <section class="cta-final" id="waitlist">
+    <div class="container">
+      <div class="cta-inner">
+        <h2 class="cta-headline center">The people who find it early — win.</h2>
+        <p class="cta-sub center">You have one body. One lung health trajectory. Snifty gives you the earliest possible warning — when it's still survivable.</p>
+        <form class="wl-form" id="waitlistForm">
+          <div class="wl-row">
+            <input type="text"  name="name"  placeholder="First name"     required />
+            <input type="email" name="email" placeholder="Email address"  required />
+            <button type="submit" class="btn btn-primary">
+              Reserve My Spot
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9M7.5 3.5l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+          <p class="wl-note">No spam. No credit card. We'll reach out when your device is ready.</p>
+        </form>
+        <div class="cta-trust-line">
+          <span>30-day money-back</span>
+          <span>·</span>
+          <span>Founding pricing locked for life</span>
+          <span>·</span>
+          <span>Ships Q4 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo" aria-label="Snifty home">
+            <img src="logo-snifty.jpg" alt="" class="logo-img" width="120" height="113" decoding="async" />
+          </a>
+          <p>Chemical intelligence for early lung cancer detection. Passive. Personal. Always on.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="#product">The device</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#science">Science</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">FDA Disclaimer</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Snifty Inc. All rights reserved.</p>
+        <p class="footer-legal">Snifty is a wellness monitoring device and is not intended to diagnose, treat, cure, or prevent any disease. Always consult a qualified healthcare professional for medical advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
