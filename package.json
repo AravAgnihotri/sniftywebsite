@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node waitlist-server.js",
-    "start": "node waitlist-server.js",
-    "serve": "node waitlist-server.js"
+    "dev": "serve . -p 3000",
+    "start": "serve . -p ${PORT:-3000}"
   },
   "dependencies": {
-    "better-sqlite3": "^11.8.1",
-    "express": "^4.21.2"
+    "serve": "^14.2.4"
   }
 }
