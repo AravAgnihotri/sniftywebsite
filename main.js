@@ -181,7 +181,7 @@ if (form) {
       err.className = 'wl-error';
       err.setAttribute('role', 'alert');
       err.textContent =
-        'Could not reach the server. If you are opening the HTML file directly, run `npm run dev` and use the local URL.';
+        'Could not reach the server. Run `npm run dev` and open the local URL, or set the snifty-waitlist-api meta tag to your API host.';
       form.insertBefore(err, form.querySelector('.wl-note'));
     }
   });

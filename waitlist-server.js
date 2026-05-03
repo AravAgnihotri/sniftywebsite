@@ -1,6 +1,7 @@
 /**
  * Snifty static site + waitlist API (SQLite).
- * Run: npm install && npm run dev
+ * Local / Railway / Render: npm install && npm run dev  (or: node waitlist-server.js)
+ * Not deployed to Vercel — use .vercelignore + static hosting there only.
  */
 
 const fs = require('fs');

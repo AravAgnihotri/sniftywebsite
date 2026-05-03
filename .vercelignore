@@ -1,0 +1,2 @@
+# Node + SQLite API — not compatible with Vercel serverless; host this file on Railway/Render/Fly.
+waitlist-server.js
