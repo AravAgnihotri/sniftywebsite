@@ -111,6 +111,12 @@ if (vocLine) {
   if (vocLine.closest('section')) chartObserver.observe(vocLine.closest('section'));
 }
 
+function waitlistPostUrl() {
+  const meta = document.querySelector('meta[name="snifty-waitlist-api"]');
+  const base = (meta?.getAttribute('content') || '').trim().replace(/\/+$/, '');
+  return base ? `${base}/api/waitlist` : '/api/waitlist';
+}
+
 // ─── WAITLIST FORM (POST → /api/waitlist, SQLite via server) ─
 const form = document.getElementById('waitlistForm');
 if (form) {
@@ -129,7 +135,7 @@ if (form) {
     btn.disabled = true;
 
     try {
-      const res = await fetch('/api/waitlist', {
+      const res = await fetch(waitlistPostUrl(), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email }),
