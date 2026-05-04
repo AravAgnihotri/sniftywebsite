@@ -2,9 +2,12 @@
   "name": "snifty-website",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "dev": "serve . -p 3000",
-    "start": "serve . -p ${PORT:-3000}"
+    "dev": "serve . --listen 3000",
+    "start": "serve ."
   },
   "dependencies": {
     "serve": "^14.2.4"
