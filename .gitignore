@@ -3,3 +3,6 @@ node_modules/
 data/*.db
 data/*.db-shm
 data/*.db-wal
+
+# Large 3D / binary assets (keep repo code-only; host separately if needed)
+*.glb
